@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\Validator;
 
 class PersonController extends BaseController
 {
+    public function welcome() {
+        $data["people"] = Person::with('locations')->get();
+        return view('welcome', $data);
+    }
 
     public function index()
     {

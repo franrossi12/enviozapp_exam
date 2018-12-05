@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Api\PersonController@welcome');
+
 
 
 // https://github.com/GeneaLabs/laravel-maps

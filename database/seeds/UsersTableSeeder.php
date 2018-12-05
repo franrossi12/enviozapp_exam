@@ -11,9 +11,8 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        $user = [ "email" => "test@gmail.com" ];
-       // set fillable property first on User model
+        $user = [ "email" => "admin@test.com" ];
         factory(App\User::class)->create($user);
-        echo "{$user["email"]} -> CREATED\n";
+        echo "USER-TEST: {$user["email"]} PASSWORD-TEST: secret";
     }
 }
