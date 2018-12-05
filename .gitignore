@@ -1,0 +1,17 @@
+# Laravel defaults.
+/vendor
+/node_modules
+/public/storage
+.env
+
+
+# IDE Helper.
+_ide_helper.php
+.phpstorm.meta.php
+
+# PHPStorm crap.
+.idea
+
+composer\.lock
+
+
